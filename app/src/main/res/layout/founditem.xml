@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNameFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etNameFound"
+        app:layout_constraintEnd_toEndOf="@+id/tvUPCFound"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvUPCFound"
+        app:layout_constraintTop_toTopOf="@+id/etNameFound"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etLongFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="244dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etLatFound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etLatFound"
+        app:layout_constraintTop_toBottomOf="@+id/etLatFound"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvSideOfAisleFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side of Aisle"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rgSideOfAisleFound"
+        app:layout_constraintEnd_toEndOf="@+id/tvAisleFound"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAisleFound"
+        app:layout_constraintTop_toTopOf="@+id/rgSideOfAisleFound" />
+
+    <EditText
+        android:id="@+id/etUPCFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUPCFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="UPC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etUPCFound"
+        app:layout_constraintEnd_toStartOf="@+id/etUPCFound"
+        app:layout_constraintTop_toTopOf="@+id/etUPCFound"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <RadioGroup
+        android:id="@+id/rgSideOfAisleFound"
+        android:layout_width="212dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/etAisleFound"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etAisleFound"
+        app:layout_constraintTop_toBottomOf="@+id/etAisleFound">
+
+        <RadioButton
+            android:id="@+id/rdNorthFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="North" />
+
+        <RadioButton
+            android:id="@+id/rdSouthFound"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="South" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etNameFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etUPCFound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etUPCFound"
+        app:layout_constraintTop_toBottomOf="@+id/etUPCFound" />
+
+    <EditText
+        android:id="@+id/etLatFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/rgSideOfAisleFound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rgSideOfAisleFound"
+        app:layout_constraintTop_toBottomOf="@+id/rgSideOfAisleFound" />
+
+    <TextView
+        android:id="@+id/tvGPSLocFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="GPS Location"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etLongFound"
+        app:layout_constraintEnd_toEndOf="@+id/tvSideOfAisleFound"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSideOfAisleFound"
+        app:layout_constraintTop_toTopOf="@+id/etLatFound"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <TextView
+        android:id="@+id/tvAisleFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aisle"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etAisleFound"
+        app:layout_constraintEnd_toEndOf="@+id/tvNameFound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNameFound"
+        app:layout_constraintTop_toTopOf="@+id/etAisleFound"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <EditText
+        android:id="@+id/etAisleFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintEnd_toEndOf="@+id/etNameFound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNameFound"
+        app:layout_constraintTop_toBottomOf="@+id/etNameFound" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back to home screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLongFound"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/tvProductNameFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etUPCFound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

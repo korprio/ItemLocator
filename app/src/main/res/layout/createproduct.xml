@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etName"
+        app:layout_constraintEnd_toEndOf="@+id/tvUPC"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvUPC"
+        app:layout_constraintTop_toTopOf="@+id/etName" />
+
+    <TextView
+        android:id="@+id/tvUPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="UPC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etUPC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etUPC" />
+
+    <TextView
+        android:id="@+id/tvAisle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aisle"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etAisle"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/etAisle" />
+
+    <TextView
+        android:id="@+id/tvSideOfAisleFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side of Aisle"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rgSideOfAisleFound"
+        app:layout_constraintEnd_toEndOf="@+id/tvAisle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAisle"
+        app:layout_constraintTop_toTopOf="@+id/rgSideOfAisleFound" />
+
+    <TextView
+        android:id="@+id/tvGPSLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="GPS Location"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etLong"
+        app:layout_constraintEnd_toEndOf="@+id/tvSideOfAisleFound"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSideOfAisleFound"
+        app:layout_constraintTop_toTopOf="@+id/etLat" />
+
+    <EditText
+        android:id="@+id/etUPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintEnd_toEndOf="@+id/etUPC"
+        app:layout_constraintStart_toStartOf="@+id/etUPC"
+        app:layout_constraintTop_toBottomOf="@+id/etUPC" />
+
+    <EditText
+        android:id="@+id/etAisle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/rgSideOfAisleFound"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rgSideOfAisleFound"
+        app:layout_constraintTop_toBottomOf="@+id/rgSideOfAisleFound" />
+
+    <EditText
+        android:id="@+id/etLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etLat"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etLat"
+        app:layout_constraintTop_toBottomOf="@+id/etLat"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/rgSideOfAisleFound"
+        android:layout_width="164dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/etAisle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etAisle"
+        app:layout_constraintTop_toBottomOf="@+id/etAisle">
+
+        <RadioButton
+            android:id="@+id/rdNorthFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="North" />
+
+        <RadioButton
+            android:id="@+id/rdSouthFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="South" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Get Location"
+        app:layout_constraintEnd_toEndOf="@+id/etLong"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etLong"
+        app:layout_constraintTop_toBottomOf="@+id/etLong" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="112dp"
+        android:text="Create Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnGetLocation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnGetLocation"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetLocation"
+        app:layout_constraintVertical_bias="0.01" />
+</android.support.constraint.ConstraintLayout>
